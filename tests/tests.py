@@ -1,7 +1,6 @@
-from dydx_v4_wrapper import DYDX
+from dydx_v4_wrapper.dydx_v4_wrapper import DYDX
 import pprint
 import time
-import asyncio
 
 
 # Example usage
@@ -9,7 +8,7 @@ async def run_tests():
     # Replace metamask wallet with your generated dYdX wallet address and dYdX generated mnemonic (available from the front-end)
     dydx_client = DYDX(
         wallet_address="dydx1hywjy59aseemlkad4wvkn2h39p9mx3y6q8egr0",
-        mnemonic='easily chair apart wear reveal stock wink wire sniff club draw chat merit ice glow seminar away quality squirrel turtle battle spirit nurse august'
+        mnemonic=''
     )
 
     time_delay = 3
