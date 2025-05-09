@@ -14,7 +14,7 @@ from dydx_v4_client.wallet import KeyPair, Wallet
 from decimal import Decimal
 import datetime
 import aiohttp
-from dydx_v4_exceptions import *
+from errors import *
 
 
 """

@@ -1,4 +1,4 @@
-from dydx_v4_wrapper.dydx_v4_wrapper import DYDX
+from dydx_client.dydx import DYDX
 import pprint
 import time
 

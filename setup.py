@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='dydx_v4_wrapper',
+    name='dydx_client',
     version='0.1.0',
     description='A simple Python wrapper for a DeFi exchange',
     author='RoscoeTheDog',
