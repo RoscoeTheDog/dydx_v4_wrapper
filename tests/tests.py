@@ -7,7 +7,7 @@ import time
 async def run_tests():
     # Replace metamask wallet with your generated dYdX wallet address and dYdX generated mnemonic (available from the front-end)
     dydx_client = DYDX(
-        wallet_address="dydx1hywjy59aseemlkad4wvkn2h39p9mx3y6q8egr0",
+        wallet_address='',
         mnemonic=''
     )
 
