@@ -7,6 +7,36 @@ setup(
     author='RoscoeTheDog',
     author_email='null',
     packages=find_packages(),  # Automatically finds your_wrapper/
-    install_requires=['dydx-v4-client'],       # Add dependencies here, if any
+    install_requires=[
+        'anyio==4.9.0',
+        'asn1crypto==1.5.1',
+        'bech32==1.2.0',
+        'bip-utils==2.9.3',
+        'cbor2==5.6.5',
+        'certifi==2025.4.26',
+        'cffi==1.17.1',
+        'coincurve==20.0.0',
+        'crcmod==1.7',
+        'dydx-v4-client==1.1.4',
+        'ecdsa==0.19.1',
+        'ed25519-blake2b==1.4.1',
+        'exceptiongroup==1.2.2',
+        'grpcio==1.65.4',
+        'grpcio-tools==1.65.4',
+        'h11==0.16.0',
+        'httpcore==1.0.9',
+        'httpx==0.27.2',
+        'idna==3.10',
+        'protobuf==5.29.4',
+        'py-sr25519-bindings==0.2.2',
+        'pycparser==2.22',
+        'pycryptodome==3.22.0',
+        'PyNaCl==1.5.0',
+        'six==1.17.0',
+        'sniffio==1.3.1',
+        'typing-extensions==4.13.2',
+        'v4-proto==5.2.1',
+        'websocket-client==1.8.0',
+    ],       # Add dependencies here, if any
     python_requires='>=3.9',   # Or whatever you support
 )
