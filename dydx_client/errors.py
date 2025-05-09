@@ -4,9 +4,27 @@ class DydxError(Exception):
     pass
 
 
+class InvalidWallet(DydxError):
+    """Exception raised when an order price is invalid or outside acceptable range"""
+
+    def __init__(self, message="Invalid wallet address", address=None):
+        self.message = f"{message}: wallet address {address} is not valid"
+        super().__init__(self.message)
+
+
+class InvalidMnemonic(DydxError):
+    """Exception raised when an order price is invalid or outside acceptable range"""
+
+    def __init__(self, message="Invalid mnemonic phrase"):
+        self.message = f"{message}: mneumonic phrase is not valid"
+        super().__init__(self.message)
+
+
 class InvalidPrice(DydxError):
     """Exception raised when an order price is invalid or outside acceptable range"""
-    def __init__(self, message="Order price is invalid or outside acceptable range", market=None, side=None, price=None, oracle_price=None):
+
+    def __init__(self, message="Order price is invalid or outside acceptable range", market=None, side=None, price=None,
+                 oracle_price=None):
         self.market = market
         self.side = side
         self.price = price
@@ -39,6 +57,7 @@ class ReduceOnlyOrderError(DydxError):
 
 class OrderRejected(DydxError):
     """Exception raised when an order is rejected by the API"""
+
     def __init__(self, message="Order was rejected", response=None):
         self.response = response
         self.message = message
